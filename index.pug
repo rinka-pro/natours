@@ -155,4 +155,31 @@ body
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			.u-center-class.u-margin-top-big
 				a(href="#").btn-text Read all stories &rarr;
+		section.section-book
+			.row
+				.book
+					.book__form
+						form.form(action="#")
+							.u-margin-bottom-medium
+								h2.heading-secondary Start booking now
+							.form__group
+								input.form__input#name(type="text" placeholder="Full name" required)
+								label.form__label(for="name") Full name
+							.form__group
+								input.form__input#email(type="email" placeholder="Email address" required)
+								label.form__label(for="email") Email address
+							.form__group.u-margin-bottom-medium
+								.form__radio-group
+									input.form__radio-input#small(type="radio" name="size")
+									label.form__radio-label(for="small")
+										span.form__radio-button
+										| Small tour group
+								.form__radio-group
+									input.form__radio-input#large(type="radio" name="size")
+									label.form__radio-label(for="large")
+										span.form__radio-button
+										|  Large tour group
+							.form__group
+								button.btn.btn--green Next step &rarr;
+
 
