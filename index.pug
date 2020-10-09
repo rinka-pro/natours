@@ -14,6 +14,33 @@ head
 	title Natours | Exciting tours for adventurous people
 
 body
+	.navigation
+		input.navigation__checkbox#nav-toggle(type="checkbox")
+		label.navigation__button(for="nav-toggle")
+			span.navigation__icon &nbsp;
+		.navigation__background &nbsp;
+		nav.navigation__nav
+			ol.navigation__list
+				li.navigation__item
+					a.navigation__link(href="#")
+						span 01
+						| About Natours
+				li.navigation__item
+					a.navigation__link(href="#")
+						span 02
+						| Your benefits
+				li.navigation__item
+					a.navigation__link(href="#")
+						span 03
+						| Popular tours
+				li.navigation__item
+					a.navigation__link(href="#")
+						span 04
+						| Stories
+				li.navigation__item
+					a.navigation__link(href="#")
+						span 05
+						| Book now
 	header.header
 		div.header__logo-box
 			img.header__logo(src="/img/logo-white.png" alt="Logo")
@@ -66,7 +93,7 @@ body
 						i.feature-box__icon.icon-basic-heart
 						h3.heading-tertiary.u-margin-bottom-small Live a healthier life
 						p.feature-box__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus adipisci, consequuntur.
-		section.section-tours
+		section.section-tours#section-tours
 			.u-center-class.u-margin-bottom-big
 				h2.heading-secondary Most popular tours
 			.row
@@ -88,7 +115,7 @@ body
 								.card__price-box
 									p.card__price-only Only
 									p.card__price-value $297
-								a(href="#").btn.btn--white Book now!
+								a(href="#popup").btn.btn--white Book now!
 				.col-1-of-3
 					.card
 						.card__side.card__side--front
@@ -107,7 +134,7 @@ body
 								.card__price-box
 									p.card__price-only Only
 									p.card__price-value $497
-								a(href="#").btn.btn--white Book now!
+								a(href="#popup").btn.btn--white Book now!
 				.col-1-of-3
 					.card
 						.card__side.card__side--front
@@ -126,7 +153,7 @@ body
 								.card__price-box
 									p.card__price-only Only
 									p.card__price-value $897
-								a(href="#").btn.btn--white Book now!
+								a(href="#popup").btn.btn--white Book now!
 			.u-center-class.u-margin-top-big
 				a(href="#").btn.btn--green Discover all tours
 		section.section-stories
@@ -204,4 +231,15 @@ body
 					|&nbsp;for his online course&nbsp;
 					a.footer__link(href="#") Advanced CSS and Sass
 					|. Copyright &copy; Jonas Schmedtmann. You are 100% allowed to use this web page for both personal and commercial use, but NOT to claim it as your own design. A credit to original author, Jonas Schmedtmann, is of course highly appreciated!
+	.popup#popup
+		.popup__content
+			.popup__left
+				img.popup__img(src="img/nat-8.jpg", alt="Tour photo")
+				img.popup__img(src="img/nat-9.jpg", alt="Tour photo")
+			.popup__right
+				a.popup__close(href="#section-tours") &times;
+				h2.heading-secondary.u-margin-bottom-small Start booking now
+				h3.heading-tertiary.u-margin-bottom-small Important &ndash; Please read these terms before booking
+				p.popup__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				a.btn.btn--green(href="#") Book now
 
